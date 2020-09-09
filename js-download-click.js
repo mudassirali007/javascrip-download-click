@@ -3,6 +3,7 @@ window.download  = (url, filename) => {
                 var a = document.createElement('a');
                 a.href = url;
                 a.download = filename || 'download';
+                
                 var clickHandler = () => {
                     setTimeout(() => {
                         a.removeEventListener('click', clickHandler);
